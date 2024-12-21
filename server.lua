@@ -23,7 +23,7 @@ function PayChecks:payDay()
         if cfg.debug then
           print('paychecks went through')
         end
-        vRP.EXT.Base.remote._notify('^2You just got paid',)
+        vRP.EXT.Base.remote._notify('^2You just got paid')
         return true
       else
         user:giveWallet(amount)
@@ -31,7 +31,7 @@ function PayChecks:payDay()
         if cfg.debug then
           print('paychecks went through')
         end
-        vRP.EXT.Base.remote._notify('^2You just got paid',)
+        vRP.EXT.Base.remote._notify('^2You just got paid')
         return true
       end
     end
